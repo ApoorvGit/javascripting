@@ -1,0 +1,23 @@
+{
+  "name": "pac",
+  "version": "1.0.0",
+  "description": "intro to js",
+  "main": "introduction.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApoorvGit/javascripting.git"
+  },
+  "keywords": [
+    "intro",
+    "js"
+  ],
+  "author": "apoorv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ApoorvGit/javascripting/issues"
+  },
+  "homepage": "https://github.com/ApoorvGit/javascripting#readme"
+}
