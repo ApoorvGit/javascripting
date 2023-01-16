@@ -25,3 +25,6 @@ module.exports={
     longest_str,
     arrow_longest_str
 }
+
+
+// we can use reduce in this question

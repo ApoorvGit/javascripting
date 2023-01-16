@@ -15,3 +15,6 @@ const arrow_check_leap_year=(year)=>{
 }
 
 console.log(check_leap_year(2000))
+module.exports={check_leap_year, 
+    arrow_check_leap_year
+}
