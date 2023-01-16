@@ -7,3 +7,7 @@ const arrow_count_vow=(str)=>{
 
 console.log(count_vow("apoorv"))
 console.log(arrow_count_vow("codeacademy"))
+module.exports={
+    count_vow,
+    arrow_count_vow
+}
