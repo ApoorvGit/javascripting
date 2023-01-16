@@ -8,3 +8,7 @@ const arrow_ends=(str)=>{
 }
 console.log(ends("JavaScript"))
 console.log(ends("apoorv"))
+module.exports={
+    ends,
+    arrow_ends
+}
