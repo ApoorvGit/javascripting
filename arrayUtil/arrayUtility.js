@@ -27,6 +27,20 @@ const tripleNumberAndzfilterEven=(numbers)=>{
 function getTriple(num) {
     return num * 3;
 }
+const tripleNumberAndzfilterEvenUsingReduce=(numbers)=>{
+    if(!Array.isArray(numbers)) throw new Error('Type Error');
+    const getTripleAndEven=(result, number)=>{
+        if(number%2==0){
+            result.push(number*3)
+            return result;
+        }else{
+            return result;
+        }
+    }
+    const newNumbers=numbers.reduce(getTripleAndEven, [])
+    
+    return newNumbers;
+}
 
-console.log(tripleNumberAndzfilterEven([1,2,3,4,5,6]))
-module.exports={doubleNumber, filterEvenNumber, tripleNumberAndzfilterEven};
+console.log(tripleNumberAndzfilterEvenUsingReduce([1,2,3,4,5,6]))
+module.exports={doubleNumber, filterEvenNumber, tripleNumberAndzfilterEven, tripleNumberAndzfilterEvenUsingReduce};
