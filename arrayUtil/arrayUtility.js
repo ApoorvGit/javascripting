@@ -16,5 +16,17 @@ const filterEvenNumber=(numbers)=>{
 const checkEven=(number)=>{
     return number%2==0;
 }
-console.log(filterEvenNumber([1,2,3,4,5]));
-module.exports={doubleNumber, filterEvenNumber};
+
+
+const tripleNumberAndzfilterEven=(numbers)=>{
+    if(!Array.isArray(numbers)) throw new Error('Type Error');
+    const newNumbers = numbers.map(getTriple);
+    return newNumbers.filter(checkEven)
+};
+
+function getTriple(num) {
+    return num * 3;
+}
+
+console.log(tripleNumberAndzfilterEven([1,2,3,4,5,6]))
+module.exports={doubleNumber, filterEvenNumber, tripleNumberAndzfilterEven};
