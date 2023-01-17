@@ -1,4 +1,4 @@
-const {doubleNumber, filterEvenNumber, tripleNumberAndzfilterEven}=require('../arrayUtility');
+const {doubleNumber, filterEvenNumber, tripleNumberAndzfilterEven, tripleNumberAndzfilterEvenUsingReduce}=require('../arrayUtility');
 
 
 describe('Array Utilities', ()=>{
@@ -30,6 +30,14 @@ describe('Array Utilities', ()=>{
             expect(result).toEqual([6,12,18]);
         });
     });
-    
+    describe('Triple each number and Filter Even Number using reduce method', ()=>{
+        it('should invoke an error when input is not an array',()=>{
+            expect(()=>tripleNumberAndzfilterEvenUsingReduce('abc')).toThrow('Type Error');
+        });
+        it('should triple each number and then filter even numbers when input is an array',()=>{
+            const result=tripleNumberAndzfilterEvenUsingReduce([1,2,3,4,5,6]);
+            expect(result).toEqual([6,12,18]);
+        });
+    });
 
 });
